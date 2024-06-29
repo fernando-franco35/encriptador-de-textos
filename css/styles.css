@@ -16,8 +16,8 @@ body{
     height: 100dvh;
 }
 
-form{
-    height: 75%;
+.main_encriptar{
+    width: 640px;
 }
 
 .texto{
@@ -33,6 +33,7 @@ form{
     outline: none;
     height: 350px;
     overflow: hidden;
+    resize: none;
 }
 
 ::placeholder{
@@ -42,15 +43,19 @@ form{
 .parrafo{
     width: 229px;
     height: 18px;
+    margin: 0;
+    padding: 20px;
 }
 
 .main_admiracion{
     display: flex;
     align-items: center;
-    gap: 5%;
     margin-bottom: 10px;
-}
+}   
 
+.main_admiracion img{
+    display: none ;
+}
 .main_botones{
     gap: 20px;
     display: flex;
@@ -63,28 +68,46 @@ form{
     background-color: #0A3871;
     text-transform: capitalize;
     width: 310px;
-    border: 1px solid;
     padding: 0;
+    cursor: pointer;
 }
 
-.boton2{
+.boton2{    
     background-color: #D8DFE8;
 }
 
+.botonpegar{
+    margin: auto;
+    width: 50%;
+    display:none;
+}
+
+button{
+    border: none;
+}
+
+button:hover{
+    border: 1px  gray;
+    border-style:outset;
+}
+
 .main_encriptado{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 16px;
-    border-radius: 32px;
     background-color: white;
     box-shadow: 0px 24px 32px -8px #00000014;
     margin: 40px;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
-.parrafos{
-    margin: 0 20px;
+.contenedor-imagen{
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
 }
 
 .parrafos_1{
@@ -101,6 +124,35 @@ form{
     line-height: 24px;
     text-align: center;
     color: #495057;
+}
+
+.texto2{
+    outline: none;
+    position: absolute;
+    top: 0;
+    margin-top: 25px;
+    width: 85%;
+    overflow: hidden;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #0A3871;
+    display: none;
+    resize: none;
+}
+
+.botoncopiar{
+    height: 50px;
+    width: 50%;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 38px;
+    display: none;
 }
 
 @media(max-width:1110px){
@@ -123,12 +175,21 @@ form{
     }
     .main_encriptado{
         width: 80%;
+        min-height: 350px;
         margin: 40px auto;
         padding: 20px;
     }
     .main_botones{
-        justify-content: center;
+        justify-content: space-around;
     }
+    .texto2{
+        margin-top: 20px;
+        width: 90%;
+        padding: 10px 0 0;
+        height: 65%;
+    }
+    
+    
 }
 
 @media(max-width:500px){
@@ -141,5 +202,19 @@ form{
     .main{
         height: 100%;
         margin-bottom: 20px;
+    }
+    .main_botones{
+        display: block;
+    }
+    .boton1{
+        width: 100%;
+    }
+    .boton2{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .botoncopiar{
+        width: 90%;
+        padding: 0;
     }
 }

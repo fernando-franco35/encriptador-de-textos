@@ -10,27 +10,26 @@
     <div class="main">
         <img class="logo" src="assets/Logo.png" alt="logo de alura">
         <div class="main_encriptar">
-            <form action="" >
-                <textarea class="texto" name="" id="" placeholder="ingrese el texto aqui"></textarea>
-            </form>
-            <div class="main_admiracion">
-                <img src="assets/bi_exclamation-circle-fill.png" alt="imagen interrogacion">   
-                <p class="parrafo">solo letras minusculas y sin acentos</p>
+                <textarea class="texto" name="" id="campo_texto" placeholder="ingrese el texto aqui"></textarea>
+            <div class="main_admiracion" id="main_admiracion">
+                <img id="simbolo" src="assets/bi_exclamation-circle-fill.png" alt="imagen admiracion" >   
+                <p class="parrafo"></p>
             </div>
             <div class="main_botones">
-                <button class="botones boton1">encriptar</button>
-                <button class="botones boton2">desencriptar</button>
+                <button class="botones boton1" id="encriptar">encriptar</button>
+                <button class="botones boton2" id="desencriptar">desencriptar</button>
             </div>
         </div>
-        <div class="main_encriptado">
-            <div class="imagen">
-                <img src="assets/Muñeco_diamante.png" alt="">
-            </div>
-            <div class="parrafos">
-                <p class="parrafos_1">Ningún mensaje fue encontrado</p>
+        <div class="main_encriptado" id="main_encriptado">
+            <div class="contenedor-imagen">
+                <img class="imagen" src="assets/Muñeco_diamante.png" alt="imagen de un nene mirando un diamante">
+                <p class="parrafos_1" id="parrafo1">Ningún mensaje fue encontrado</p>
                 <p class="parrafos_2">Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
+                <textarea class="texto2" name="" id="campo_texto2" readonly></textarea>
+                <button class="botoncopiar" id="botoncopiar">Copiar</button>
         </div>
     </div>
+<script src="js/scripts.js"></script>
 </body>
 </html>
