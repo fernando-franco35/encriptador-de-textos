@@ -76,12 +76,6 @@ body{
     background-color: #D8DFE8;
 }
 
-.botonpegar{
-    margin: auto;
-    width: 50%;
-    display:none;
-}
-
 button{
     border: none;
 }

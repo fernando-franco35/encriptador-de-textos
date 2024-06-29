@@ -91,7 +91,6 @@ function ocultarerror(){
 botoncopiar.addEventListener("click",e=>{
     e.preventDefault();
     let textoencriptado = campotexto2.value;
-    console.log(textoencriptado);
     campotexto.value = "";
     activarbotones();
     campotexto2.select();
