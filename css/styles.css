@@ -91,6 +91,12 @@ body{
     width: 310px;
     padding: 0;
     cursor: pointer;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.boton1{
+    color: white;
 }
 
 .boton2{    
